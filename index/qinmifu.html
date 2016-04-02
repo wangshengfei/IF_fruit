@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>亲密付</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+</head>
+<body>
+	<div data-role="page">
+		<!--样式-->
+		<div style="display: none;">
+			<script src="jquery-2.1.4.min.js"></script>
+			<script>
+			$(function(){
+				var H = $(window).height();
+				var h1 = 0.65*H;
+				var h2 = 0.35*H;
+				$("#top").css({"height":h1});
+				$("#center").css({"height":h2});
+			});
+			</script>
+			<style>
+			*{margin: 0;padding: 0;}
+			#top{width: 100%;background: #FE5164;position: relative;}
+			#top_wrap{width: 80%;height: 90%;position: absolute;margin: auto;left: 0;top: 0;right: 0;bottom: 0;background: #FE5164;}
+			#top_wrap_content img{width: 60%;left: 50%;top: 50%;position: absolute;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			-webkit-transform: translate(-50%, -50%);
+			-o-transform: translate(-50%, -50%);
+			-moz-transform: translate(-50%, -50%);}
+			#top_wrap_content p{width: 100px;height: auto;color: white;font-size: 25px;position: absolute;left: 50%;top: 90%;font-family: "微软雅黑";
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			-webkit-transform: translate(-50%, -50%);
+			-o-transform: translate(-50%, -50%);
+			-moz-transform: translate(-50%, -50%);}
+			#center{width: 100%;position: relative;}
+			#center p{width: 260px;height: auto;margin: 30px auto;font-family: "微软雅黑";font-size: 20px;}
+			#btn1{width: 35%;height: 60px;border-radius: 20px;background: #FE5164;position: absolute;left: 10%;color: white;line-height: 60px;font-size: 25px;text-align: center;font-family: "微软雅黑";}
+			#btn2{width: 35%;height: 60px;border-radius: 20px;border: 1px #FE5164 solid;position: absolute;right: 10%;color: #FE5164;line-height: 60px;font-size: 25px;text-align: center;font-family: "微软雅黑";}
+			</style>
+		</div>
+		<!--样式-->
+		<div id="top">
+			<div id="top_wrap">
+				<div id="top_wrap_content">
+					<img src="t1.png" alt="">
+					<p>您的关爱我来送上</p>
+				</div>			
+			</div>	
+		</div>
+		<div id="center">
+			<p>专人送货/神秘卡片/精美包装</p>
+			<div id="btn1">送Ta惊喜</div>
+			<div id="btn2">求开通</div>
+		</div>		
+	</div>
+</body>
+</html>
