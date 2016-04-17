@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<title>Document</title>
+	<script src="jquery-2.1.4.min.js"></script>
+	<style>
+		*{margin: 0;padding: 0;}
+		body{width: 100%;height: auto;background-image: url(images/a.jpg);}
+		a{cursor: pointer;}
+		.logo img{width: 80px;height: 80px;position: absolute;left: 50px;top: 30px;}
+		.title{color: #fff;font-size: 30px;position: absolute;left: 40%;top: 50px;}
+		.btn{width: 170px;height: 50px;border-radius: 5px;background: #12A2E3;text-decoration: none;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);}
+		.btn img{width: 25px;position: absolute;left: 30px;top: 14px;}
+		.btn p{display: block;text-align: center;line-height: 50px;color: #fff;font-family: "微软雅黑";padding-left: 30px;}
+		#deliver p{padding-left: 40px;}
+		#shoper{position: absolute;left: 40%;top: 35%;}
+		#deliver{position: absolute;left: 60%;top: 35%;}
+	</style>
+</head>
+<body>
+	<div class="logo"><img src="images/logo.png" alt=""></div>
+	<div class="title">如"果",一切皆有可能</div>
+	<a id="shoper" class="btn">
+		<p><img src="images/a.png" alt="">我是商家</p>
+	</a>
+	<a id="deliver" class="btn">
+		<p><img src="images/b.png" alt="">我是送货员</p>
+	</a>
+</body>
+</html>
+<script>
+$(function(){
+	$("#shoper").click(function(){
+		window.location = "login/shoper.php?type=1";
+	});
+	$("#deliver").click(function(){
+		window.location = "login/shoper.php?type=2";
+	});	
+});
+</script>
